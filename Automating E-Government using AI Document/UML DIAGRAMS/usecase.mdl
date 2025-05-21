@@ -1,0 +1,439 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5E6C4A1D01A5"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"5E6C4A1D01A7"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list
+	    (object Class "User"
+		quid       	"5E6C4A230298"
+		stereotype 	"Actor")
+	    (object UseCase "Detect Sentiments From Face Expression Photo"
+		quid       	"5E6C4A2B0199")
+	    (object UseCase "Upload Your Face Expression Photo About Government Policies"
+		quid       	"5E6C4A46018C")
+	    (object UseCase "View Peoples Sentiments From Opinions"
+		quid       	"5E6C4A4B039E")
+	    (object UseCase "Write Your Opinion About Government Policies"
+		quid       	"5E6C4A5E0280")
+	    (object UseCase "Upload Test Image & Recognize Digit"
+		quid       	"5E6C4A6601B0")
+	    (object UseCase "Generate Text & Image Based Sentiment Detection Deep Learning Model"
+		quid       	"5E6C4A7F0023")
+	    (object Association "$UNNAMED$0"
+		quid       	"5E6C4A8E00BF"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"5E6C4A8F00D2"
+			supplier   	"Use Case View::Upload Test Image & Recognize Digit"
+			quidu      	"5E6C4A6601B0"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"5E6C4A8F00D3"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6C4A230298")))
+	    (object Association "$UNNAMED$3"
+		quid       	"5E6C4A9202BA"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"5E6C4A9302A2"
+			supplier   	"Use Case View::Write Your Opinion About Government Policies"
+			quidu      	"5E6C4A5E0280"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"5E6C4A9302A3"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6C4A230298")))
+	    (object Association "$UNNAMED$6"
+		quid       	"5E6C4A9602A1"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"5E6C4A98002A"
+			supplier   	"Use Case View::View Peoples Sentiments From Opinions"
+			quidu      	"5E6C4A4B039E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"5E6C4A98002B"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6C4A230298")))
+	    (object Association "$UNNAMED$9"
+		quid       	"5E6C4A9A0108"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"5E6C4A9B02FA"
+			supplier   	"Use Case View::Upload Your Face Expression Photo About Government Policies"
+			quidu      	"5E6C4A46018C"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"5E6C4A9B02FB"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6C4A230298")))
+	    (object Association "$UNNAMED$12"
+		quid       	"5E6C4AA101C5"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"5E6C4AA20292"
+			supplier   	"Use Case View::Detect Sentiments From Face Expression Photo"
+			quidu      	"5E6C4A2B0199"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"5E6C4AA20293"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6C4A230298")))
+	    (object Association "$UNNAMED$15"
+		quid       	"5E6C4AA900B5"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$16"
+			quid       	"5E6C4AAB0083"
+			supplier   	"Use Case View::Generate Text & Image Based Sentiment Detection Deep Learning Model"
+			quidu      	"5E6C4A7F0023"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"5E6C4AAB0084"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6C4A230298"))))
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"5E6C4A1D01E7"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object UseCaseView "Use Case View::Upload Test Image & Recognize Digit" @1
+			location   	(1456, 320)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(1456, 458)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Upload Test Image & Recognize Digit")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4A6601B0"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Write Your Opinion About Government Policies" @2
+			location   	(1456, 576)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1456, 714)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Write Your Opinion About Government Policies")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4A5E0280"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::View Peoples Sentiments From Opinions" @3
+			location   	(1424, 816)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(1424, 954)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"View Peoples Sentiments From Opinions")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4A4B039E"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Upload Your Face Expression Photo About Government Policies" @4
+			location   	(1424, 1088)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(1424, 1226)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Upload Your Face Expression Photo About Government Policies")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4A46018C"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Detect Sentiments From Face Expression Photo" @5
+			location   	(1440, 1376)
+			label      	(object ItemLabel
+			    Parent_View 	@5
+			    location   	(1440, 1514)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Detect Sentiments From Face Expression Photo")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4A2B0199"
+			height     	118
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Use Case View::User" @6
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(528, 672)
+			label      	(object ItemLabel
+			    Parent_View 	@6
+			    location   	(528, 832)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	327
+			    justify    	0
+			    label      	"User")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4A230298"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @7
+			location   	(869, 539)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6C4A8E00BF"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @8
+				Parent_View 	@7
+				location   	(341, -133)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A8F00D2"
+				client     	@7
+				supplier   	@1
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @9
+				Parent_View 	@7
+				location   	(341, -133)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A8F00D3"
+				client     	@7
+				supplier   	@6
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$3" @10
+			location   	(965, 623)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6C4A9202BA"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @11
+				Parent_View 	@10
+				location   	(437, -49)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A9302A2"
+				client     	@10
+				supplier   	@2
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @12
+				Parent_View 	@10
+				location   	(437, -49)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A9302A3"
+				client     	@10
+				supplier   	@6
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$6" @13
+			location   	(949, 737)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6C4A9602A1"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @14
+				Parent_View 	@13
+				location   	(421, 65)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A98002A"
+				client     	@13
+				supplier   	@3
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @15
+				Parent_View 	@13
+				location   	(421, 65)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A98002B"
+				client     	@13
+				supplier   	@6
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$9" @16
+			location   	(949, 865)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6C4A9A0108"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @17
+				Parent_View 	@16
+				location   	(421, 193)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A9B02FA"
+				client     	@16
+				supplier   	@4
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @18
+				Parent_View 	@16
+				location   	(421, 193)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4A9B02FB"
+				client     	@16
+				supplier   	@6
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$12" @19
+			location   	(975, 1015)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6C4AA101C5"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$13" @20
+				Parent_View 	@19
+				location   	(447, 343)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4AA20292"
+				client     	@19
+				supplier   	@5
+				line_style 	0)
+			    (object RoleView "$UNNAMED$14" @21
+				Parent_View 	@19
+				location   	(447, 343)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4AA20293"
+				client     	@19
+				supplier   	@6
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Generate Text & Image Based Sentiment Detection Deep Learning Model" @22
+			location   	(1440, 64)
+			label      	(object ItemLabel
+			    Parent_View 	@22
+			    location   	(1440, 202)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	729
+			    justify    	0
+			    label      	"Generate Text & Image Based Sentiment Detection Deep Learning Model")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4A7F0023"
+			height     	118
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$15" @23
+			location   	(870, 440)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6C4AA900B5"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$16" @24
+				Parent_View 	@23
+				location   	(342, -232)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4AAB0083"
+				client     	@23
+				supplier   	@22
+				line_style 	0)
+			    (object RoleView "$UNNAMED$17" @25
+				Parent_View 	@23
+				location   	(342, -232)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6C4AAB0084"
+				client     	@23
+				supplier   	@6
+				line_style 	0)))))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"5E6C4A1D01A6"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"5E6C4A1D01A8"
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"5E6C4A1D01B0"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"5E6C4A1D01A8"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"5E6C4A1D01E6"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"5E6C4A1D01A9"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"5E6C4A1D01AB"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"5E6C4A1D01AA"))

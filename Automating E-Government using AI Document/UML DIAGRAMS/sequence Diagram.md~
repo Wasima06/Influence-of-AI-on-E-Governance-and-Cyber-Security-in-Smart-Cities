@@ -1,0 +1,420 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5E6C4AD003BD"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"5E6C4AD003BF"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"5E6C4AD1001C"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"5E6C4AD003BE"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"5E6C4AD003C0"
+	logical_models 	(list unit_reference_list
+	    (object Mechanism @1
+		logical_models 	(list unit_reference_list
+		    (object Object "User"
+			quid       	"5E6C4ADD0289"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5E6C4AF60399"
+				supplier   	"Application"
+				quidu      	"5E6C4AE70099"
+				messages   	(list Messages
+				    (object Message "1.Generate Text & Image Based Sentiment Detection Deep Learning Model"
+					quid       	"5E6C4AF603E3"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	0)
+				    (object Message "2.Upload Test Image & Recognize Digit"
+					quid       	"5E6C4B1A0221"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	1)
+				    (object Message "3.Write Your Opinion About Government Policies"
+					quid       	"5E6C4B39010A"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	2)
+				    (object Message "4.View Peoples Sentiments From Opinions"
+					quid       	"5E6C4B5303BA"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	3)
+				    (object Message "5.Upload Your Face Expression Photo About Government Policies"
+					quid       	"5E6C4B6E0082"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	4)
+				    (object Message "6.Detect Sentiments From Face Expression Photo"
+					quid       	"5E6C4B84010A"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	5))))
+			persistence 	"Transient"
+			multi      	FALSE)
+		    (object Object "Application"
+			quid       	"5E6C4AE70099"
+			persistence 	"Transient"
+			multi      	FALSE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"5E6C4AD003C4"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))
+	    (object InteractionDiagram "NewDiagram"
+		mechanism_ref 	@1
+		quid       	"5E6C4AD80270"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object InterObjView "User" @2
+			location   	(448, 224)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(448, 224)
+			    fill_color 	12058623
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"User")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4ADD0289"
+			width      	300
+			height     	1313
+			icon_height 	0
+			icon_width 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @3
+			    location   	(448, 352)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	184
+			    y_coord    	124
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @4
+			    location   	(448, 608)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	152
+			    y_coord    	92
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @5
+			    location   	(448, 784)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	136
+			    y_coord    	76
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @6
+			    location   	(448, 960)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	136
+			    y_coord    	76
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @7
+			    location   	(448, 1136)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @8
+			    location   	(448, 1312)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	136
+			    y_coord    	76
+			    Nested     	FALSE))
+		    (object InterObjView "Application" @9
+			location   	(2512, 224)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@9
+			    location   	(2512, 224)
+			    fill_color 	12058623
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Application")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6C4AE70099"
+			width      	300
+			height     	1313
+			icon_height 	0
+			icon_width 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @10
+			    location   	(1792, 416)
+			    line_color 	3342489
+			    InterObjView 	@9
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @11
+			    location   	(2512, 640)
+			    line_color 	3342489
+			    InterObjView 	@9
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @12
+			    location   	(2512, 800)
+			    line_color 	3342489
+			    InterObjView 	@9
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @13
+			    location   	(2512, 976)
+			    line_color 	3342489
+			    InterObjView 	@9
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @14
+			    location   	(2512, 1136)
+			    line_color 	3342489
+			    InterObjView 	@9
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @15
+			    location   	(2512, 1328)
+			    line_color 	3342489
+			    InterObjView 	@9
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "" @16
+			location   	(0, 416)
+			label      	(object SegLabel @17
+			    Parent_View 	@16
+			    location   	(1480, 372)
+			    quidu      	"5E6C4AF603E3"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	1363
+			    justify    	0
+			    label      	"1.Generate Text & Image Based Sentiment Detection Deep Learning Model"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@9
+			Focus_Src  	@3
+			Focus_Entry 	@10
+			origin     	(464, 416)
+			terminus   	(2496, 416)
+			ordinal    	0)
+		    (object InterMessView "" @18
+			location   	(0, 640)
+			label      	(object SegLabel @19
+			    Parent_View 	@18
+			    location   	(1480, 596)
+			    quidu      	"5E6C4B1A0221"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	709
+			    justify    	0
+			    label      	"2.Upload Test Image & Recognize Digit"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@9
+			Focus_Src  	@4
+			Focus_Entry 	@11
+			origin     	(464, 640)
+			terminus   	(2496, 640)
+			ordinal    	1)
+		    (object InterMessView "" @20
+			location   	(0, 800)
+			label      	(object SegLabel @21
+			    Parent_View 	@20
+			    location   	(1480, 756)
+			    quidu      	"5E6C4B39010A"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	881
+			    justify    	0
+			    label      	"3.Write Your Opinion About Government Policies"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@9
+			Focus_Src  	@5
+			Focus_Entry 	@12
+			origin     	(464, 800)
+			terminus   	(2496, 800)
+			ordinal    	2)
+		    (object InterMessView "" @22
+			location   	(0, 976)
+			label      	(object SegLabel @23
+			    Parent_View 	@22
+			    location   	(1480, 932)
+			    quidu      	"5E6C4B5303BA"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	781
+			    justify    	0
+			    label      	"4.View Peoples Sentiments From Opinions"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@9
+			Focus_Src  	@6
+			Focus_Entry 	@13
+			origin     	(464, 976)
+			terminus   	(2496, 976)
+			ordinal    	3)
+		    (object InterMessView "" @24
+			location   	(0, 1136)
+			label      	(object SegLabel @25
+			    Parent_View 	@24
+			    location   	(1480, 1092)
+			    quidu      	"5E6C4B6E0082"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	1200
+			    justify    	0
+			    label      	"5.Upload Your Face Expression Photo About Government Policies"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@9
+			Focus_Src  	@7
+			Focus_Entry 	@14
+			origin     	(464, 1136)
+			terminus   	(2496, 1136)
+			ordinal    	4)
+		    (object InterMessView "" @26
+			location   	(0, 1328)
+			label      	(object SegLabel @27
+			    Parent_View 	@26
+			    location   	(1480, 1284)
+			    quidu      	"5E6C4B84010A"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	922
+			    justify    	0
+			    label      	"6.Detect Sentiments From Face Expression Photo"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@9
+			Focus_Src  	@8
+			Focus_Entry 	@15
+			origin     	(464, 1328)
+			terminus   	(2496, 1328)
+			ordinal    	5)))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"5E6C4AD003C0"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"5E6C4AD1001B"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"5E6C4AD003C1"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"5E6C4AD003C3"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"5E6C4AD003C2"))
